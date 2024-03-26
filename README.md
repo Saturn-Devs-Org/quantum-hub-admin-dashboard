@@ -1,2 +1,2 @@
-# quantum-hub-admin-dashboard
+# Quantum Hub Admin Dashboard
 E-Commerce Admin Dashboard
