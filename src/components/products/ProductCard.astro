@@ -1,0 +1,44 @@
+---
+import PencilIcon from '../Icons/PencilIcon.astro'
+import TrashCanIcon from '../Icons/TrashCanIcon.astro'
+---
+
+<div
+  class="flex flex-col bg-white border border-gray-200 rounded-lg shadow overflow-hidden dark:bg-gray-800 dark:border-gray-700"
+>
+  <a href="#" class="block">
+    <img
+      class="object-cover w-full min-h-48 min-w-32 sm:min-h-56 md:min-h-64 p-5"
+      src="https://extremetechcr.com/tienda/24469-thickbox_default/msi-geforce-rtx-4090-gaming-trio-24g.jpg"
+      alt="product image"
+    />
+  </a>
+  <div class="p-4 flex flex-col justify-between flex-1">
+    <div>
+      <a href="#" class="block">
+        <h5
+          class="text-sm font-semibold text-gray-900 dark:text-white truncate text-wrap"
+        >
+          MSI GEFORCE RTX 4090 GAMING TRIO 24G
+        </h5>
+      </a>
+      <p
+        class="text-lg font-semibold text-right mt-2 text-gray-500 dark:text-white"
+      >
+        $2000
+      </p>
+    </div>
+    <div class="mt-4 flex gap-2">
+      <button
+        class="flex-1 inline-flex items-center justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+      >
+        Edit
+      </button>
+      <button
+        class="flex-1 inline-flex items-center justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
