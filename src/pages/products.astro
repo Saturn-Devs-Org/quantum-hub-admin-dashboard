@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Pagination from '../components/Pagination.astro'
+import PlusIcon from '../Icons/PlusIcon.astro'
+import ProductFilters from '../components/products/ProductFilters.astro'
+import ProductList from '../components/products/ProductList.astro'
+---
+
+<Layout title="Products">
+  <div class="overflow-hidden">
+    <div class="flex justify-between items-center flex-wrap">
+      <h1 class="text-3xl text-bold dark:text-white mb-4 sm:mb-0">
+        Product List
+      </h1>
+      <div>
+        <button
+          class="text-white flex justify-center items-center gap-x-1 truncate bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
+          <PlusIcon />
+          New Product
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 dark:bg-gray-900 rounded-lg py-2 px-2 mt-4">
+      <ProductFilters />
+
+      <ProductList />
+    </div>
+
+    <Pagination />
+  </div>
+</Layout>
