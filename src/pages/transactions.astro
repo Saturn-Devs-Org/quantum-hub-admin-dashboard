@@ -1,0 +1,150 @@
+---
+import Pagination from '../components/Pagination.astro'
+import Layout from '../layouts/Layout.astro'
+import TransactionFilter from '../components/transactions/TransactionFilters.astro'
+import Table from '../components/Table.astro'
+---
+
+<Layout title="Transactions">
+  <div class="flex justify-start items-center flex-wrap">
+    <h1 class="text-3xl text-bold dark:text-white mb-4 sm:mb-0">
+      Transaction Table
+    </h1>
+  </div>
+
+  <div class="bg-gray-100 dark:bg-gray-900 rounded-lg py-2 px-2 mt-4">
+    <TransactionFilter />
+    <Table>
+        <tr slot="thead">
+          <th scope="col" class="px-6 py-3"> Id </th>
+          <th scope="col" class="px-6 py-3"> Total </th>
+          <th scope="col" class="px-6 py-3"> Method </th>
+          <th scope="col" class="px-6 py-3"> Created At </th>
+          <th scope="col" class="px-6 py-3"> Action </th>
+        </tr>
+      <div slot="tbody">
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            56262
+          </th>
+          <td class="px-6 py-4"> $3500 </td>
+          <td class="px-6 py-4"> Master Card </td>
+          <td class="px-6 py-4"> 08/23/2024 </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >View Details</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            56262
+          </th>
+          <td class="px-6 py-4"> $3500 </td>
+          <td class="px-6 py-4"> Master Card </td>
+          <td class="px-6 py-4"> 08/23/2024 </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >View Details</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            56262
+          </th>
+          <td class="px-6 py-4"> $3500 </td>
+          <td class="px-6 py-4"> Master Card </td>
+          <td class="px-6 py-4"> 08/23/2024 </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >View Details</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            56262
+          </th>
+          <td class="px-6 py-4"> $3500 </td>
+          <td class="px-6 py-4"> Master Card </td>
+          <td class="px-6 py-4"> 08/23/2024 </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline truncate"
+              >View Details</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            56262
+          </th>
+          <td class="px-6 py-4"> $3500 </td>
+          <td class="px-6 py-4"> Master Card </td>
+          <td class="px-6 py-4"> 08/23/2024 </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >View Details</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            56262
+          </th>
+          <td class="px-6 py-4"> $3500 </td>
+          <td class="px-6 py-4"> Master Card </td>
+          <td class="px-6 py-4"> 08/23/2024 </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >View Details</a
+            >
+          </td>
+        </tr>
+      </div>
+    </Table>
+    <Pagination />
+  </div>
+</Layout>
