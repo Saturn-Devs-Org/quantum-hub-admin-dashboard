@@ -1,0 +1,228 @@
+---
+import CustomerFilters from '../components/customers/CustomerFilters.astro'
+import Pagination from '../components/Pagination.astro'
+import Layout from '../layouts/Layout.astro'
+import Table from '../components/Table.astro'
+---
+
+<Layout title="Customers">
+  <div class="flex justify-start items-center flex-wrap">
+    <h1 class="text-3xl text-bold dark:text-white mb-4 sm:mb-0">
+      Customer Table
+    </h1>
+  </div>
+
+  <div class="bg-gray-100 dark:bg-gray-900 rounded-lg py-2 px-2 mt-4">
+    <CustomerFilters />
+    <Table>
+      <tr slot="thead">
+        <th scope="col" class="px-6 py-3"> Id </th>
+        <th scope="col" class="px-6 py-3"> Name </th>
+        <th scope="col" class="px-6 py-3"> Email </th>
+        <th scope="col" class="px-6 py-3"> Phone Number </th>
+        <th scope="col" class="px-6 py-3"> Address </th>
+        <th scope="col" class="px-6 py-3"> Action </th>
+        <th scope="col" class="px-6 py-3"> Action </th>
+      </tr>
+      <div slot="tbody">
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+        <tr
+          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        >
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            125325
+          </th>
+          <td class="px-6 py-4"> Joseph Miso </td>
+          <td class="px-6 py-4"> jmiso33@gmail.com </td>
+          <td class="px-6 py-4"> 55-53843623 </td>
+          <td class="px-6 py-4"> Oakland, US </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+          </td>
+          <td class="px-6 py-4">
+            <a
+              href="#"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+              >Delete</a
+            >
+          </td>
+        </tr>
+      </div>
+    </Table>
+    <Pagination />
+  </div>
+</Layout>
