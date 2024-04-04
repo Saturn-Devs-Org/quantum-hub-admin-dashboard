@@ -7,6 +7,6 @@ import react from '@astrojs/react'
 export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'hybrid',
-  site: 'https://Saturn-Devs-Org//.github.io',
+  site: 'https://Saturn-Devs-Org.github.io',
   base: 'quantum-hub-admin-dashboard',
 })
